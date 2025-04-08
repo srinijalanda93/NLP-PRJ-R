@@ -58,4 +58,22 @@ This project solves that by automating:
 ---
 
 ## 🧱 Project Structure
-NLP-PRJ-R/ │ ├── Resume/ │ ├── models/ # Trained ML models + vectorizer │ │ ├── naive_bayes_model.pkl │ │ ├── svm_model.pkl │ │ └── tfidf_vectorizer.pkl │ │ │ ├── sample_resumes/ │ │ └── ACCOUNTANT/ # Sample PDF resumes for testing │ │ │ ├── utils/ # Utility scripts │ │ ├── nlp_utils.py # Text cleaning, entity extraction, question generation │ │ └── pdf_utils.py # PDF text extraction using PyMuPDF │ ├── app.py # Main Streamlit app for UI ├── predict_resume_category.py # Script for backend prediction logic ├── que.py # Standalone script for question generation ├── train_accountant_model.py # Script to train SVM / Naive Bayes on labeled resumes ├── finance_accountant_resumes.csv # Resume dataset used for training ├── accuracy values.txt # Evaluation results of models ├── requirements.txt # Python dependencies ├── README.md 
+NLP-PRJ-R/
+│ ├── Resume/ 
+  │ ├── models/ # Trained ML models + vectorizer 
+    │ │ ├── naive_bayes_model.pkl
+    │ │ ├── svm_model.pkl
+    │ │ └── tfidf_vectorizer.pkl 
+│ ├── sample_resumes/ 
+    │ │ └── ACCOUNTANT/ # Sample PDF resumes for testing
+│ ├── utils/ # Utility scripts 
+      │ │ ├── nlp_utils.py # Text cleaning, entity extraction, question generation 
+      │ │ └── pdf_utils.py # PDF text extraction using PyMuPDF 
+ ├── app.py # Main Streamlit app for UI
+ ├── predict_resume_category.py # Script for backend prediction logic
+ ├── que.py # Standalone script for question generation 
+ ├── train_accountant_model.py # Script to train SVM / Naive Bayes on labeled resumes
+ ├── finance_accountant_resumes.csv # Resume dataset used for training
+ ├── accuracy values.txt # Evaluation results of models 
+ ├── requirements.txt # Python dependencies 
+ ├── README.md 
