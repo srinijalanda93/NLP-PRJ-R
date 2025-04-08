@@ -18,9 +18,11 @@ To develop an automated system that:
 - Generates intelligent, personalized interview questions tailored to the candidate's background
 
 ---
+<hr>
 ##Dataset 
 Used kaggle dataset  <a link="https://www.kaggle.com/datasets/snehaanbhawal/resume-dataset">Kaggle</a>
 and data preprocessing is in these ipynb <a link="https://github.com/srinijalanda93/NLP-PRJ-R/blob/main/Resume/resume.ipynb">notebook</a>
+<hr>
 
 ## 💡 Problem Definition
 
