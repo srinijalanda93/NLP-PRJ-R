@@ -5,7 +5,7 @@ A smart NLP-powered system that reads a candidate's resume (in PDF), predicts th
 ---
 
 ## 🔍 Theme / Domain
-**Artificial Intelligence + Natural Language Processing**
+**Machine Learning Models + Natural Language Processing**
 
 The project combines classical machine learning, text mining, and resume parsing to build an intelligent interview assistant.
 
