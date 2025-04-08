@@ -77,3 +77,16 @@ NLP-PRJ-R/
  ├── accuracy values.txt # Evaluation results of models 
  ├── requirements.txt # Python dependencies 
  ├── README.md 
+<img width="308" alt="Screenshot 2025-04-08 at 12 18 48 PM" src="https://github.com/user-attachments/assets/2287567c-623b-4cc8-812d-81721c5f0220" />
+
+
+ <h1>Frontent part using streamlit</h1>
+ <h2>USING SVM </h2>
+ <img width="1291" alt="Screenshot 2025-04-08 at 12 48 31 PM" src="https://github.com/user-attachments/assets/1fcd1464-bdcf-49a0-bac4-3bea99ac4133" />
+ 
+<img width="1291" alt="Screenshot 2025-04-08 at 12 50 04 PM" src="https://github.com/user-attachments/assets/a417f20a-1452-4e3b-a6c7-2e8f28502cf3" />
+<h2>Using navie base</h2>
+
+<img width="472" alt="Screenshot 2025-04-08 at 12 51 29 PM" src="https://github.com/user-attachments/assets/615394e4-d957-491f-bba1-3bd20910354c" />
+
+
