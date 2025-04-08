@@ -1,5 +1,11 @@
 import streamlit as st
 import joblib
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
+import json
+
 import io
 from utils.pdf_utils import extract_text_from_pdf
 from utils.nlp_utils import clean_text, extract_skills, extract_entities, generate_questions
@@ -95,3 +101,51 @@ if uploaded_file:
         file_name="interview_questions.txt",
         mime="text/plain"
     )
+# Load evaluation metrics
+def load_evaluation_report():
+    report_path = "models/evaluation_report.json"
+    if os.path.exists(report_path):
+        with open(report_path, "r") as file:
+            return json.load(file)
+    else:
+        return None
+
+# Display report as table and heatmap
+def display_metrics():
+    st.subheader("📊 Model Evaluation Metrics")
+
+    report = load_evaluation_report()
+    if report:
+        for model_name, metrics in report.items():
+            st.markdown(f"### 🔍 {model_name} Performance")
+            accuracy = metrics["accuracy"]
+            st.write(f"**Accuracy:** {accuracy:.2f}")
+
+            class_data = metrics["report"]
+            classes = ["ACCOUNTANT", "FINANCE"]
+
+            data = []
+            for cls in classes:
+                cls_metrics = class_data[cls]
+                data.append([
+                    cls,
+                    cls_metrics["precision"],
+                    cls_metrics["recall"],
+                    cls_metrics["f1-score"],
+                    cls_metrics["support"]
+                ])
+
+            df = pd.DataFrame(data, columns=["Class", "Precision", "Recall", "F1 Score", "Support"])
+            st.dataframe(df.style.format(precision=2))
+
+            # Heatmap
+            fig, ax = plt.subplots()
+            sns.heatmap(df[["Precision", "Recall", "F1 Score"]].set_index(df["Class"]),
+                        annot=True, cmap="YlGnBu", fmt=".2f", ax=ax)
+            st.pyplot(fig)
+
+    else:
+        st.warning("⚠️ Evaluation report not found in models folder.")
+
+# Call this inside your main app layout where you want to show metrics
+display_metrics()

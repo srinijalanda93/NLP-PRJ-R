@@ -6,6 +6,7 @@ from sklearn.svm import LinearSVC
 from sklearn.metrics import accuracy_score, classification_report
 import joblib
 from utils.nlp_utils import clean_text
+import json
 
 # 1. Load and clean data
 df = pd.read_csv("/Users/srinija/Desktop/Resume/finance_accountant_resumes.csv")
@@ -48,3 +49,19 @@ joblib.dump(svm_model, "models/svm_model.pkl")
 joblib.dump(vectorizer, "models/tfidf_vectorizer.pkl")
 
 print(" Models trained, evaluated, and saved.")
+
+# Combine reports
+results = {
+    "Naive Bayes": {
+        "accuracy": accuracy_score(y_test, nb_preds),
+        "report": classification_report(y_test, nb_preds)
+    },
+    "SVM": {
+                "accuracy": accuracy_score(y_test, nb_preds),
+        "report": classification_report(y_test, svm_preds)
+    }
+}
+
+# Save to JSON file
+with open("models/evaluation_report.json", "w") as f:
+    json.dump(results, f, indent=4)
