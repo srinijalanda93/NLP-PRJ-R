@@ -17,12 +17,8 @@ To develop an automated system that:
 - Extracts structured details like skills, education, and experience
 - Generates intelligent, personalized interview questions tailored to the candidate's background
 
----
 <hr>
-##Dataset 
-Used kaggle dataset  <a link="https://www.kaggle.com/datasets/snehaanbhawal/resume-dataset">Kaggle</a>
-and data preprocessing is in these ipynb <a link="https://github.com/srinijalanda93/NLP-PRJ-R/blob/main/Resume/resume.ipynb">notebook</a>
-<hr>
+
 
 ## 💡 Problem Definition
 
@@ -50,6 +46,18 @@ This project solves that by automating:
 ---
 
 ## 🧰 Tech Stack
+## 🛠️ Tools & Technologies
+
+- **Language**: Python 3.x
+- **Libraries**:
+  - `scikit-learn`, `joblib`, `fitz` (PyMuPDF), `re`
+  - `Streamlit` for frontend
+- **Models**: SVM, Multinomial Naive Bayes
+- **Dataset**:
+  - [Kaggle Resume Dataset](https://www.kaggle.com/datasets/snehaanbhawal/resume-dataset)
+  - [data preprocessing](https://github.com/srinijalanda93/NLP-PRJ-R/blob/main/Resume/resume.ipynb)
+  - Custom-labeled: `finance_accountant_resumes.csv`
+  - Sample PDFs: `sample_resumes/`
 
 | Area                | Tools / Libraries Used            |
 |---------------------|----------------------------------|
