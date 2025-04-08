@@ -20,7 +20,7 @@ To develop an automated system that:
 ---
 ##Dataset 
 Used kaggle dataset  <a link="https://www.kaggle.com/datasets/snehaanbhawal/resume-dataset">Kaggle</a>
-and data preprocessing is in
+and data preprocessing is in these ipynb <a link="https://github.com/srinijalanda93/NLP-PRJ-R/blob/main/Resume/resume.ipynb">notebook</a>
 
 ## 💡 Problem Definition
 
