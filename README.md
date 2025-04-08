@@ -87,6 +87,8 @@ NLP-PRJ-R/
 <img width="1291" alt="Screenshot 2025-04-08 at 12 50 04 PM" src="https://github.com/user-attachments/assets/a417f20a-1452-4e3b-a6c7-2e8f28502cf3" />
 <h2>Using navie base</h2>
 
-<img width="472" alt="Screenshot 2025-04-08 at 12 51 29 PM" src="https://github.com/user-attachments/assets/615394e4-d957-491f-bba1-3bd20910354c" />
+<img width="472" alt="Screens<img width="718" alt="Screenshot 2025-04-08 at 1 09 40 PM" src="https://github.com/user-attachments/assets/ab60b5a8-eb33-445f-b256-26da6c5afe0a" />
+<img width="718" alt="Screenshot 2025-04-08 at 1 10 23 PM" src="https://github.com/user-attachments/assets/4847bc4e-e768-4f8b-b776-0adb92a16301" />
+hot 2025-04-08 at 12 51 29 PM" src="https://github.com/user-attachments/assets/615394e4-d957-491f-bba1-3bd20910354c" />
 
 
